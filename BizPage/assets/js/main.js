@@ -326,32 +326,33 @@
 
 })()
 
-// Función para copiar texto al portapapeles
-function copyToClipboard(text) {
-  const input = document.createElement('textarea');
-  input.value = text;
-  document.body.appendChild(input);
-  input.select();
-  document.execCommand('copy');
-  document.body.removeChild(input);
-}
+// Agregar estilos y funcionalidad de copia al hacer clic en números de teléfono y direcciones de correo electrónico
+$(document).ready(function() {
+  $('.phone, .email').on('mouseenter', function() {
+    $(this).css({
+      'color': '#cfb20c',
+      'text-decoration': 'underline',
+      'cursor': 'pointer'
+    });
+  }).on('mouseleave', function() {
+    $(this).css({
+      'color': 'inherit',
+      'text-decoration': 'none',
+      'cursor': 'auto'
+    });
+  }).on('click', function() {
+    const value = $(this).data('value');
+    copyToClipboard(value);
+    alert('¡Copiado al portapapeles!');
+  });
 
-// Evento para copiar el teléfono al portapapeles y mostrar un Toast
-document.querySelector('.phone').addEventListener('click', function() {
-  const value = this.getAttribute('data-value');
-  copyToClipboard(value);
-
-  // Mostrar el Toast de Bootstrap
-  const phoneToast = new bootstrap.Toast(document.getElementById('phoneToast'));
-  phoneToast.show();
-});
-
-// Evento para copiar el correo electrónico al portapapeles y mostrar un Toast
-document.querySelector('.email').addEventListener('click', function() {
-  const value = this.getAttribute('data-value');
-  copyToClipboard(value);
-
-  // Mostrar el Toast de Bootstrap
-  const emailToast = new bootstrap.Toast(document.getElementById('emailToast'));
-  emailToast.show();
+  // Función para copiar texto al portapapeles
+  function copyToClipboard(text) {
+    const input = document.createElement('textarea');
+    input.value = text;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+  }
 });
