@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BizPage Bootstrap Template</title>
+  <title>DYC INGENIERIA Y AUTOMATIZACION</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
@@ -27,13 +27,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: BizPage
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- JQuery CDN Loader-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </head>
 
 <body>
@@ -41,21 +38,56 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container-fluid">
+      <div class="contacto text-white align-items-left justify-content-between" style="padding-left: 6px; padding-bottom: 12px">
+        <span style="margin-right: 10px;">Contacto <i class="bi bi-phone-fill"></i></span>
+        <span class="phone" data-value="56-9134343434" style="margin-right: 20px; cursor: pointer; text-decoration: underline; color: var(--coloBase);">56-9134343434</span>
+        <span style="margin-right: 10px;">Email <i class="bi bi-envelope-at-fill"></i></span>
+        <span class="email" data-value="ejemplo@dyc.cl" style="cursor: pointer; text-decoration: underline; color: var(--coloBase);">ejemplo@dyc.cl</span>
+      </div>
+      <!-- Toast para el teléfono -->
+      <div id="phoneToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Copia Exitosa</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+        </div>
+        <div class="toast-body">
+          ¡El teléfono se ha copiado al portapapeles!
+        </div>
+      </div>
 
-      <div class="row justify-content-center align-items-center">
+      <!-- Toast para el correo electrónico -->
+      <div id="emailToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Copia Exitosa</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+        </div>
+        <div class="toast-body">
+          ¡El correo electrónico se ha copiado al portapapeles!
+        </div>
+      </div>
+
+      
+      
+      
+      <div class="row justify-content-left align-items-center">
         <div class="col-xl-11 d-flex align-items-center justify-content-between">
-          <h1 class="logo"><a href="index.html">BizPage</a></h1>
+          <!-- <h1 class="logo"><a href="index.html">BizPage</a></h1> -->
           <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+          <div class="d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="" class="img-fluid mt-1" style="max-width: 80px; margin-right: 10px;"> 
+            <a href="index.html" class="logo">
+              <span id="titulo-web" class="text-white h5">Ingenieria y Automatizacion</span>
+            </a>
+          </div>
+          
           <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-              <li><a class="nav-link scrollto" href="#about">About</a></li>
-              <li><a class="nav-link scrollto" href="#services">Services</a></li>
-              <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-              <li><a class="nav-link scrollto" href="#team">Team</a></li>
-              <li><a class="nav-link  " href="blog.html">Blog</a></li>
+              <li><a class="nav-link scrollto text-white" href="#hero">Inicio</a></li>
+              <li><a class="nav-link scrollto" href="#about">Quienes Somos</a></li>
+              <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+              <li><a class="nav-link scrollto " href="#portfolio">Portafolio</a></li>
+              <li><a class="nav-link scrollto" href="#team">Colaboradores</a></li>
+              <!-- <li><a class="nav-link  " href="blog.html">Blog</a></li>
               <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li><a href="#">Drop Down 1</a></li>
@@ -72,8 +104,8 @@
                   <li><a href="#">Drop Down 3</a></li>
                   <li><a href="#">Drop Down 4</a></li>
                 </ul>
-              </li>
-              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              </li> -->
+              <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -297,7 +329,8 @@
     </section><!-- End Call To Action Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills">
+    <!-- Ideas para cambiar o eliminar esta seccion -->
+    <!-- <section id="skills">
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
@@ -333,7 +366,7 @@
 
         </div>
 
-      </div>
+      </div> -->
     </section><!-- End Skills Section -->
 
     <!-- ======= Facts Section ======= -->

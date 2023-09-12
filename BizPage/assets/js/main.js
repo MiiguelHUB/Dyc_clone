@@ -325,3 +325,33 @@
   new PureCounter();
 
 })()
+
+// Función para copiar texto al portapapeles
+function copyToClipboard(text) {
+  const input = document.createElement('textarea');
+  input.value = text;
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand('copy');
+  document.body.removeChild(input);
+}
+
+// Evento para copiar el teléfono al portapapeles y mostrar un Toast
+document.querySelector('.phone').addEventListener('click', function() {
+  const value = this.getAttribute('data-value');
+  copyToClipboard(value);
+
+  // Mostrar el Toast de Bootstrap
+  const phoneToast = new bootstrap.Toast(document.getElementById('phoneToast'));
+  phoneToast.show();
+});
+
+// Evento para copiar el correo electrónico al portapapeles y mostrar un Toast
+document.querySelector('.email').addEventListener('click', function() {
+  const value = this.getAttribute('data-value');
+  copyToClipboard(value);
+
+  // Mostrar el Toast de Bootstrap
+  const emailToast = new bootstrap.Toast(document.getElementById('emailToast'));
+  emailToast.show();
+});
