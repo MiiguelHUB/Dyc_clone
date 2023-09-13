@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// require 'XAMPP/php/PHPMailer/src/Exception.php'; // Rutas de los archivos PHP, revisar que sean correctas
-// require 'XAMPP/php/PHPMailer/src/PHPMailer.php';
-// require 'XAMPP/php/PHPMailer/src/SMTP.php';
+require 'forms\PHPMailer\src\Exception.php'; // Rutas de los archivos PHP, revisar que sean correctas
+require 'forms\PHPMailer\src\PHPMailer.php';
+require 'forms\PHPMailer\src\SMTP.php';
 
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
@@ -16,7 +16,7 @@ $mail = new PHPMailer(true);
 
 try {
     // Configurar el servidor SMTP de Gmail
-    $mail->SMTPDebug = 0; // Desactivar el modo de depuración (cambiar a 2 para ver detalles, 0 para el modo usuario)
+    $mail->SMTPDebug = 2; // Desactivar el modo de depuración (cambiar a 2 para ver detalles, 0 para el modo usuario)
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
