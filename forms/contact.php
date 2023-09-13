@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'XAMPP/php/PHPMailer/src/Exception.php'; // Rutas de los archivos PHP, revisar que sean correctas
-require 'XAMPP/php/PHPMailer/src/PHPMailer.php';
-require 'XAMPP/php/PHPMailer/src/SMTP.php';
+// require 'XAMPP/php/PHPMailer/src/Exception.php'; // Rutas de los archivos PHP, revisar que sean correctas
+// require 'XAMPP/php/PHPMailer/src/PHPMailer.php';
+// require 'XAMPP/php/PHPMailer/src/SMTP.php';
 
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
