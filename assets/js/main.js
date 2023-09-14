@@ -326,9 +326,10 @@
 
 })()
 
-// Agregar estilos y funcionalidad de copia al hacer clic en números de teléfono y direcciones de correo electrónico
+
 $(document).ready(function() {
-  $('.phone, .email').on('mouseenter', function() {
+  // Interacciones para la clase "phone"
+  $('.phone').on('mouseenter', function() {
     $(this).css({
       'color': '#cfb20c',
       'text-decoration': 'underline',
@@ -346,6 +347,29 @@ $(document).ready(function() {
     alert('¡Copiado al portapapeles!');
   });
 
+  // Interacciones para la clase "email"
+  $('.email').on('mouseenter', function() {
+    $(this).css({
+      'color': '#cfb20c', // Cambia el color a azul, por ejemplo
+      'text-decoration': 'underline',
+      'cursor': 'pointer'
+    });
+  }).on('mouseleave', function() {
+    $(this).css({
+      'color': 'inherit',
+      'text-decoration': 'none',
+      'cursor': 'auto'
+    });
+  }).on('click', function(event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+    // Acceder al correo del usuario con el correo de la empresa pre-escrito
+    const empresaEmail = $(this).data('value');
+    window.location.href = "mailto:" + empresaEmail;
+  });
+});
+
+
   // Función para copiar texto al portapapeles
   function copyToClipboard(text) {
     const input = document.createElement('textarea');
@@ -355,7 +379,7 @@ $(document).ready(function() {
     document.execCommand('copy');
     document.body.removeChild(input);
   }
-});
+
 
 
 // Ajusta el desplazamiento "Empezemos"
