@@ -360,9 +360,9 @@ $(document).ready(function() {
 
 // Ajusta el desplazamiento "Empezemos"
 function scrollToServices() {
-  const servicesSection = document.querySelector("#services");
+  const servicesSection = document.querySelector("#services-jump");
   if (servicesSection) {
-    const offset = 100; // Ajusta este valor según tus necesidades
+    const offset = 10; // Ajusta este valor según tus necesidades
     const topPos = servicesSection.offsetTop - offset;
     window.scrollTo({ top: topPos, behavior: 'smooth' });
   }
