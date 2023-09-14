@@ -356,3 +356,14 @@ $(document).ready(function() {
     document.body.removeChild(input);
   }
 });
+
+
+// Ajusta el desplazamiento "Empezemos"
+function scrollToServices() {
+  const servicesSection = document.querySelector("#services");
+  if (servicesSection) {
+    const offset = 100; // Ajusta este valor según tus necesidades
+    const topPos = servicesSection.offsetTop - offset;
+    window.scrollTo({ top: topPos, behavior: 'smooth' });
+  }
+}
