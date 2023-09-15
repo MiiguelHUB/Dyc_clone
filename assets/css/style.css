@@ -1481,8 +1481,20 @@ section {
   cursor: pointer;
 }
 
+#send-mail-down {
+  box-shadow: 0px 0px 5px rgba(214, 215, 216, 0.6); /* Agrega una sombra pequeña */
+  transition: box-shadow 0.3s; /* Agrega una transición suave */
+}
+
+#send-mail-down:hover {
+  box-shadow: 0px 0px 5px #fff, 0px 0px 0px 1px black; /* Cambia la sombra y agrega un borde al hacer hover */
+}
+
+
+
 #contact .php-email-form button[type=submit]:hover {
-  background: #13a456;
+  background: var(--colorBase);
+  color: var(--colorNegro);
 }
 
 @keyframes animate-loading {
