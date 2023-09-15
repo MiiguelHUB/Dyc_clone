@@ -14,14 +14,13 @@ body {
 
 a {
   color: var(--colorBase);
-  transition: 0.5s;
   text-decoration: none;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #18d36e;
+  color: var(--colorBase);
   outline: none;
   text-decoration: none;
 }
@@ -67,7 +66,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2ce782;
+  background: var(--colorBase);
   color: #fff;
 }
 
@@ -1445,7 +1444,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--colorBase);
+  border: 3px solid #fff;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
