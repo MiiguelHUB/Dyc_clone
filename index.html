@@ -69,8 +69,8 @@
           <nav id="navbar" class="navbar">
             <ul>
               <li><a class="nav-link scrollto text-white" href="#hero">Inicio</a></li>
-              <li><a class="nav-link scrollto" href="#services-jump">Quienes Somos</a></li>
-              <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+              <li><a class="nav-link scrollto" href="#about-us">Quienes Somos</a></li>
+              <li><a class="nav-link scrollto" href="#services-jump">Servicios</a></li>
               <li><a class="nav-link scrollto " href="#portfolio">Portafolio</a></li>
               <li><a class="nav-link scrollto" href="#team">Colaboradores</a></li>
               <!-- <li><a class="nav-link  " href="blog.html">Blog</a></li>
@@ -91,7 +91,7 @@
                   <li><a href="#">Drop Down 4</a></li>
                 </ul>
               </li> -->
-              <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+              <li><a class="nav-link scrollto" href="#contact-jump">Contacto</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -210,7 +210,7 @@
 
         <header class="section-header">
           <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </header>
 
         <div class="row about-cols">
@@ -316,7 +316,7 @@
         <p>¿Listo para impulsar tu negocio? En DyC, ofrecemos servicios de vanguardia, desde mantenimiento hasta automatización y suministro de accesorios. Nuestro equipo está disponible 24/7 para resolver tus desafíos técnicos. ¡Déjanos ser tu socio en la excelencia operativa!
 
         </p>
-        <a class="cta-btn" href="#">¡Contactanos!</a>
+        <a class="cta-btn" href="#contact-jump">¡Contactanos!</a>
       </div>
     </section><!-- End Call To Action Section -->
 
@@ -736,7 +736,7 @@
           </div>
 
         </div>
-
+        <div id="contact-jump" class="pt-1"></div>
       </div>
     </section><!-- End Team Section -->
 
@@ -746,7 +746,7 @@
 
         <div class="section-header">
           <h3>Contactanos</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p>No dudes en contactarnos, un grupo de profesionales estara dispuestos a solucionar tus inquietudes</p>
         </div>
 
         <div class="row contact-info">
@@ -772,7 +772,7 @@
             <div class="contact-email">
               <i class="bi bi-envelope"></i>
               <h3>Correo</h3>
-              <p><a href="mailto:contacto@dycingenieria.cl">contacto@dycingenieria.cl</a></p>
+              <p><a href="mailto:contacto@dycingenieria.cl" class="email">contacto@dycingenieria.cl</a></p>
             </div>
           </div>
 
@@ -782,24 +782,24 @@
           <form action="forms\contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="form-group col-md-6">
-                <input type="text" name="nombre" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="nombre" class="form-control" id="name" placeholder="Tu nombre" required>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="correo" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="correo" id="email" placeholder="Tu correo" required>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="asunto" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="asunto" id="subject" placeholder="Asunto" required>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="contenido" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="contenido" rows="5" placeholder="Tu mensaje" required></textarea>
             </div>
             <div class="my-3">
-              <div class="loading">Loading</div>
+              <div class="loading">Cargando</div>
               <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="sent-message">Tu mensaje ha sido enviado, gracias!</div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit">Enviar mensaje</button></div>
           </form>
         </div>
         
@@ -832,11 +832,12 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
+            <h4>Contactanos</h4>
+            <p>Pasaje Fontone N°6054
+              Puerto Montt
+              Region de Los Lagos<br>
+              <br>
+              Chile <br>
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
@@ -851,7 +852,7 @@
 
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
+          <div class="col-lg-3 col-md-6 footer-newsletter" style="display: none">
             <h4>Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
             <form action="" method="post">

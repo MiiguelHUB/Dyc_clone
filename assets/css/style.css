@@ -12,10 +12,16 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+a.email {
+  color: #fff
+}
+
+
 a {
   color: var(--colorBase);
   text-decoration: none;
 }
+
 
 a:hover,
 a:active,
