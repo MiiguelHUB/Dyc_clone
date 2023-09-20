@@ -391,3 +391,17 @@ function scrollToServices() {
     window.scrollTo({ top: topPos, behavior: 'smooth' });
   }
 }
+ 
+// Mapa en el footer
+function initMap() {
+  var myLatLng = {lat: -41.519370934768396, lng:-73.06546686138327}; // Reemplazar T_LATITUD y T_LONGITUD con tus coordenadas
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15, // Ajusta el nivel de zoom
+    center: myLatLng
+  });
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Mi Empresa'
+  });
+}

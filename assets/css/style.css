@@ -1675,3 +1675,18 @@ section {
   color: #ddd;
 }
 
+/* Mapa responsivo */
+.map-container {
+  position: relative;
+  padding-top: 31%; /* Ajusta este valor para cambiar la relación de aspecto (por ejemplo, 75% para 4:3) */
+  height: 0;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
