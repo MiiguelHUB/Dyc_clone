@@ -1649,7 +1649,7 @@ section {
   width: 65%;
 }
 
-#footer .footer-top .footer-newsletter input[type=submit] {
+/* #footer .footer-top .footer-newsletter input[type=submit] {
   background: var(--colorBase);
   border: 0;
   width: 35%;
@@ -1658,11 +1658,11 @@ section {
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
-}
+} */
 
-#footer .footer-top .footer-newsletter input[type=submit]:hover {
+/* #footer .footer-top .footer-newsletter input[type=submit]:hover {
   background: #13a456;
-}
+} */
 
 #footer .copyright {
   text-align: center;
