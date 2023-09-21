@@ -1690,3 +1690,33 @@ section {
   width: 100%;
   height: 100%;
 }
+
+/* Seccion para el header portfolio temporalmente desactivado */
+/* Estilo para el enlace desactivado */
+#portafolio-disabled {
+  cursor: not-allowed; /* Cambia el cursor a "no permitido" */
+  color: #ccc; /* Cambia el color del texto a gris o el color deseado */
+  pointer-events: none; /* Desactiva los eventos de puntero en el enlace */
+  position: relative; /* Añade una posición relativa para el contenido emergente */
+}
+
+/* Estilo para el mensaje emergente */
+#portafolio-disabled::before {
+  content: "En Construcción"; /* Contenido del mensaje emergente */
+  display: block; /* Hace que el contenido se muestre como un bloque */
+  position: absolute; /* Posición absoluta sobre el enlace */
+  background-color: #333; /* Color de fondo del mensaje */
+  color: #fff; /* Color del texto del mensaje */
+  padding: 5px 10px; /* Espaciado interno del mensaje */
+  border-radius: 5px; /* Borde redondeado */
+  top: 100%; /* Alinea el mensaje debajo del enlace */
+  left: 50%; /* Alinea el mensaje en el centro horizontalmente */
+  transform: translateX(-50%); /* Centra el mensaje horizontalmente */
+  opacity: 0; /* Inicialmente, el mensaje está oculto */
+  transition: opacity 0.3s ease; /* Agrega una transición para suavizar la aparición */
+}
+
+/* Estilo para mostrar el mensaje cuando se pasa el cursor por encima */
+#portafolio-disabled:hover::before {
+  opacity: 1; /* Muestra el mensaje cuando se pasa el cursor por encima */
+}

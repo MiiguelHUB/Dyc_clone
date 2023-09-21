@@ -29,150 +29,124 @@
 
   <!-- JQuery CDN Loader-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-
-  
-  
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container-fluid">
-      <div class="text-white mt-3 mb-3 d-flex align-items-center">
-        <span id="contacto1">
-          Contacto 
-          <i class="bi bi-phone-fill"></i>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <div class="container-fluid">
+    <div class="text-white mt-3 mb-3 d-flex align-items-center">
+      <span id="contacto1">
+        Contacto 
+        <i class="bi bi-phone-fill"></i>
+      </span>
+      <span class="phone" style="padding-right: 20px" data-value="+569-83469980">+569-83469980</span>
+      <span id="contacto2" class="ml-3">
+        <i class="bi bi-envelope-at-fill"></i>
+        <a class="email" href="mailto:contacto@dycingenieria.cl" data-value="contacto@dycingenieria.cl">contacto@dycingenieria.cl</a>
+      </span>
+    </div>
+    
+    <div class="row justify-content-left align-items-center">
+      <div class="col-xl-11 d-flex align-items-center justify-content-between">
+        <!-- <h1 class="logo"><a href="index.html">BizPage</a></h1> -->
+        <!-- Descomenta a continuación si prefieres usar un logo de imagen -->
+        <div class="d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" class="img-fluid mt-1" style="max-width: 80px; margin-right: 10px;"> 
+          <a href="index.html" class="logo">
+            <span id="titulo-web" class="text-white h5">Ingeniería y Automatización</span>
+          </a>
+        </div>
         
-        <span class="phone" style="padding-right: 20px" data-value="+569-83469980">+569-83469980</span>
-        </span>
-        <span id="contacto2" class="ml-3">
-          <i class="bi bi-envelope-at-fill"> </i>
-          <a class="email" href="mailto:contacto@dycingenieria.cl" data-value="contacto@dycingenieria.cl">contacto@dycingenieria.cl</a>
-        </span>
-      </div>
-      
-      <div class="row justify-content-left align-items-center">
-        <div class="col-xl-11 d-flex align-items-center justify-content-between">
-          <!-- <h1 class="logo"><a href="index.html">BizPage</a></h1> -->
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <div class="d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="" class="img-fluid mt-1" style="max-width: 80px; margin-right: 10px;"> 
-            <a href="index.html" class="logo">
-              <span id="titulo-web" class="text-white h5">Ingenieria y Automatizacion</span>
-            </a>
-          </div>
-          
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a class="nav-link scrollto text-white" href="#hero">Inicio</a></li>
-              <li><a class="nav-link scrollto" href="#about-us">Quienes Somos</a></li>
-              <li><a class="nav-link scrollto" href="#services-jump">Servicios</a></li>
-              <li><a class="nav-link scrollto " href="#portfolio">Portafolio</a></li>
-              <li><a class="nav-link scrollto" href="#team">Colaboradores</a></li>
-              <!-- <li><a class="nav-link  " href="blog.html">Blog</a></li>
-              <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="#">Deep Drop Down 1</a></li>
-                      <li><a href="#">Deep Drop Down 2</a></li>
-                      <li><a href="#">Deep Drop Down 3</a></li>
-                      <li><a href="#">Deep Drop Down 4</a></li>
-                      <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
-                </ul>
-              </li> -->
-              <li><a class="nav-link scrollto" href="#contact-jump">Contacto</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
-        </div>
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/1.jpg)">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">Somos profesionales</h2>
-                <p class="animate__animated animate__fadeInUp">Diseño implementacion y aplicacion de tecnologias para tus proyectos.</p>
-                <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empezemos</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/2.jpg)">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">Soporte 24 x 7</h2>
-                <p class="animate__animated animate__fadeInUp">Reactores UV, sensores oxigeno, PH, RP, CO2, flujometros, transmisores de presión, temperatura.</p>
-                <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empezemos</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpg)">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">Mantención mecánica</h2>
-                <p class="animate__animated animate__fadeInUp">Compresores de anillo líquido, Blowers (Robuschi, Nash).</p>
-                <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empezemos</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/4.jpg)">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">Contador de peces FLS System</h2>
-                <p class="animate__animated animate__fadeInUp">Venta de repuestos, instalacion, mantenimiento y reparación de contadores.</p>
-                <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empezemos</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/5.jpg)">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">Programacion de PLC y diseño de  HMI</h2>
-                <p class="animate__animated animate__fadeInUp">Especialistas en OMRON, Allen-Bradley , Siemens.</p>
-                <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empezemos</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto text-white" href="#hero">Inicio</a></li>
+            <li><a class="nav-link scrollto" href="#about-us-top">Quiénes Somos</a></li>
+            <li><a class="nav-link scrollto" href="#services-jump">Servicios</a></li>
+            <li><a class="nav-link scrollto disabled" id="portafolio-disabled" href="#portfolio">Portafolio<i class="bi bi-hammer"></i></a></li>
+            <li><a class="nav-link scrollto" href="#team">Colaboradores</a></li>
+            <li><a class="nav-link scrollto" href="#contact-jump">Contacto</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
       </div>
     </div>
-  </section><!-- End Hero Section -->
+  </div>
+</header><!-- Fin de Encabezado -->
+
+<!-- ======= Sección de héroe ======= -->
+<section id="hero">
+  <div class="hero-container">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Somos profesionales</h2>
+              <p class="animate__animated animate__fadeInUp">Diseño, implementación y aplicación de tecnologías para tus proyectos.</p>
+              <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empecemos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Soporte 24 x 7</h2>
+              <p class="animate__animated animate__fadeInUp">Reactores UV, sensores de oxígeno, pH, RP, CO2, flujómetros, transmisores de presión, temperatura.</p>
+              <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empecemos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Mantenimiento mecánico</h2>
+              <p class="animate__animated animate__fadeInUp">Compresores de anillo líquido, Blowers (Robuschi, Nash).</p>
+              <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empecemos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/4.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Contador de peces FLS System</h2>
+              <p class="animate__animated animate__fadeInUp">Venta de repuestos, instalación, mantenimiento y reparación de contadores.</p>
+              <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empecemos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/5.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Programación de PLC y diseño de HMI</h2>
+              <p class="animate__animated animate__fadeInUp">Especialistas en OMRON, Allen-Bradley, Siemens.</p>
+              <a href="#services-jump" class="btn-get-started scrollto animate__animated animate__fadeInUp">Empecemos</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </div>
+</section><!-- Fin de la Sección de Héroe -->
+
 
 
   <main id="main">
@@ -195,7 +169,7 @@
         </div>
 
         <div class="col-lg-4 box">
-          <i class="bi bi-screwdriver"></i>
+          <i class="bi bi-bandaid-fill"></i>
           <h4 class="title"><a href="#">Reparación</a></h4>
           <p class="description">Realizamos reparaciones de compresores de anillo líquido, contadores de peces y ofrecemos servicios de mecánica general y electricidad. Confía en nuestros técnicos calificados.</p>
         </div>
@@ -205,6 +179,9 @@
   </section><!-- End Featured Services Section -->
 
     <!-- ======= About Us Section ======= -->
+    <br><div id="about-us-bottom"></div>
+    <br><div id="about-us-top"></div>
+    <br><div id="about-us-bottom"></div>
     <section id="about">
       <div class="container" data-aos="fade-up">
 
@@ -220,11 +197,11 @@
             <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                <div class="icon"><i class="bi bi-arrow-up-right-circle-fill"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestro Misión</a></h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Nacimos de la necesidad de forjar una empresa con un sólido proyecto de servicios profesionales, con una fuerte base en crear, mantener y asegurar una escalabilidad a los proyectos de nuestros clientes.
               </p>
             </div>
           </div>
@@ -233,7 +210,7 @@
             <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="bi bi-brightness-high"></i></div>
+                <div class="icon"><i class="bi bi-pie-chart-fill"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestro Plan</a></h2>
               <p>
@@ -246,7 +223,7 @@
             <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-vision.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                <div class="icon"><i class="bi bi-rocket-fill"></i></div>
               </div>
               <h2 class="title"><a href="#">Nuestra Visión</a></h2>
               <p>
@@ -256,6 +233,7 @@
           </div>
 
         </div>
+        <div id="services-jump-bottom"></div><br>
 
       </div>
     </section><!-- End About Us Section -->
@@ -320,47 +298,6 @@
         <a class="cta-btn" href="#contact-jump">¡Contactanos!</a>
       </div>
     </section><!-- End Call To Action Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <!-- Ideas para cambiar o eliminar esta seccion -->
-    <!-- <section id="skills">
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h3>Our Skills</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-        </header>
-
-        <div class="skills-content">
-
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">HTML <i class="val">100%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">CSS <i class="val">90%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
-    <!--</section>-- End Skills Section -->
 
     <!-- ======= Facts Section ======= -->
     <section id="facts">
@@ -663,15 +600,18 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-    
+        <br><br>
+        <div id="team-bottom"></div>
       </div>
 
     <!-- ======= Team Section ======= -->
     <section id="team">
+      <br><br><br>
+        <div id="team-bottom"></div>
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h3>Nuestro Equipo</h3>
-          <p>Para un trabajo eficiente y de calidad es necesario un equipo preparado, experimentado y profesional.</p>
+          <p>Para llevar a cabo los exigentes proyectos de nuestros clientes es necesario un equipo preparado, experimentado y profesional.</p>
         </div>
 
         <div class="row">
@@ -749,17 +689,18 @@
           </div>
 
         </div>
-        <div id="contact-jump" class="pt-1"></div>
+        
       </div>
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
+    <br><div id="contact-jump"></div>
     <section id="contact" class="section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <h3>Contactanos</h3>
-          <p>No dudes en contactarnos, un grupo de profesionales estara dispuestos a solucionar tus inquietudes</p>
+          <p>No dudes en contactarnos, un grupo de profesionales estara dispuestos a solucionar todas tus inquietudes</p>
         </div>
 
         <div class="row contact-info">
@@ -842,10 +783,10 @@
             <h4>Enlaces de Interés</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Quiénes Somos</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Servicios</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Portafolio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Colaboradores</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about-us-bottom">Quiénes Somos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services-jump-bottom">Servicios</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a >Portafolio <i class="bi bi-hammer"></i></a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#team-bottom">Colaboradores</a></li>
             </ul>
           </div>
 
@@ -863,7 +804,7 @@
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
-              <a href="https://cl.linkedin.com/in/claudio-inzunza-dyc-ingenieria-ltda-5b3b40185" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://cl.linkedin.com/in/claudio-inzunza-alvarado-0265b68b?trk=public_profile_browsemap" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
 
           </div>
