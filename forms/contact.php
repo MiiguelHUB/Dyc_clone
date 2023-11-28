@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'forms\PHPMailer\src\Exception.php'; // Rutas de los archivos PHP, revisar que sean correctas
-require 'forms\PHPMailer\src\PHPMailer.php';
-require 'forms\PHPMailer\src\SMTP.php';
+require 'forms/PHPMailer/src/Exception.php';
+require 'forms/PHPMailer/src/PHPMailer.php';
+require 'forms/PHPMailer/src/SMTP.php';
 
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
@@ -20,15 +20,13 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'auronferro@gmail.com'; // Reemplaza con tu dirección de correo Gmail
-    $mail->Password = 'gbzi immb ggrw fiqb'; // Reemplaza con tu contraseña Gmail (Puede requerir contraseña especial para apps)
-                                             // Revisar la documentacion
+    $mail->addAddress('miguel.ortiz@dycingenieria.cl'); // Cambiado a la nueva dirección                                             // Revisar la documentacion
     $mail->SMTPSecure = 'tls'; // Puede ser 'ssl' o 'tls'
     $mail->Port = 587; // Puerto SMTP para TLS, 587 es el valor por defecto e ideal
 
     // Configurar remitente y destinatario
     $mail->setFrom($correo, $nombre);
-    $mail->addAddress('auronferro@gmail.com'); // Reemplaza con la dirección de correo destino
+    $mail->addAddress('miguel.ortiz@dycingenieria.cl'); // Reemplaza con la dirección de correo destino
 
     // Contenido del correo
     $mail->isHTML(true);
